@@ -33,7 +33,7 @@ class CMainWidget(QWidget, cUi):
         self.btn_start.clicked.connect(self.slot_btn_start)
 
     def slot_btn_choose_dir(self):
-        self.save_dir = QFileDialog.getExistingDirectory(self, "choose save dir", "save")
+        self.save_dir = QFileDialog.getExistingDirectory(self, "choose save dir", "/save")
         self.edit_save_dir.setText(self.save_dir)
 
     def slot_btn_start(self):
